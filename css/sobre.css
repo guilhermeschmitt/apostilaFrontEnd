@@ -21,6 +21,17 @@
 	width: 94px;
 }
 
+.container-frame{
+	text-align: center;
+}
+
+.container-frame > iframe{
+	background: black;
+	border: none;
+	height: 300px;
+	width: 600px;
+}
+
 body {
 	color:#333333;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-seriff;
