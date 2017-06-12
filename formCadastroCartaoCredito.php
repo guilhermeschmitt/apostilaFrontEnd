@@ -2,7 +2,7 @@
 							<legend>Cartão de crédito</legend>
 							<div class="form-group">
 								<label for="numero-cartao"> Número - CVV</label>
-								<input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+								<input type="text" class="form-control" id="numero-cartao" name="numero-cartao" data-mask="9999 9999 9999 9999 - 999" placeholder="9999 9999 9999 9999 - 999">
 							</div>
 							<div class="form-group">
 								<label for="bandeira-cartao">Bandeira</label>

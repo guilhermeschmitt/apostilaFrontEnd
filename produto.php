@@ -12,6 +12,8 @@
 			<div class="produto">
 				<h1>Fuzzy Cardigan</h1>
 				<p>Por apenas R$129,00</p>
+				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=172&layout=button_count&action=like&size=small&show_faces=false&share=true&height=46&appId" width="172" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Teste%20Um%20Dois%20Tres">Tweet</a>
 				<form action="checkout.php" method="POST">
 					<input type="hidden" name="nome" value="Fuzzy Cardigan">
 					<input type="hidden" name="preco" value="129.00">
@@ -34,6 +36,7 @@
 					<fieldset class="tamanhos">
 						<legend>Escolha o tamanho</legend>
 						<input type="range" min="36" max="48" value="42" step="2" name="tamanho" id="tamanho">
+						<output for="tamanho" name="valortamanho">42</output>
 					</fieldset>
 					<input type="submit" class="comprar" value="Comprar">
 				</form>
@@ -70,5 +73,22 @@
 		
 	</div>
 	<?php include("rodape.php");?>
+	<script src="js/jquery.js"></script>
+	<script src="js/produto.js"></script>
+	<script>window.twttr = (function(d, s, id) {
+  				var js, fjs = d.getElementsByTagName(s)[0],
+   				 t = window.twttr || {};
+  				if (d.getElementById(id)) return t;
+ 				js = d.createElement(s);
+  				js.id = id;
+  				js.src = "https://platform.twitter.com/widgets.js";
+  				fjs.parentNode.insertBefore(js, fjs);
+				t._e = [];
+				t.ready = function(f) {
+   					t._e.push(f);
+  				};
+  				 return t;
+			}(document, "script", "twitter-wjs"));
+	</script>
 	</body>
 </html>

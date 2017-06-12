@@ -12,7 +12,7 @@
 							</div>
 							<div class="form-group">
 								<label for="cpf">CPF</label>
-								<input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required></input>
+								<input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" data-mask="999.999.999-99" required></input>
 							</div>
 							<div class="checkbox">
 								<label>
