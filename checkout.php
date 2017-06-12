@@ -26,7 +26,7 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/converteMoeda.js"></script>
-
 		<script src="js/total.js"></script> 
+		<script src="js/inputmask-plugin.js"></script>
 	</body>
 </html>

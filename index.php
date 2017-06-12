@@ -1,6 +1,7 @@
 <?php 
 	$cabecalho_title = "Página Principal";
-	$cabecalho_css = '<link rel="stylesheet" href="css/estilo.css" >
+	$cabecalho_css = '<link href="http://fonts.googleapis.com/css?family=Mogra|Revalia" rel="stylesheet">
+					  <link rel="stylesheet" href="css/estilo.css" >
 					  <link rel="stylesheet" href="css/reset.css" >';  
 	include("cabecalho.php");
 ?>
@@ -38,7 +39,7 @@
 			</section>
 			<img src="img/destaque-home.png" alt="Promoção: Big City Night">
 		</div>
-		<div class="container paineis">
+		<div class="container">
 			<section class="painel novidades">
 				<h2>Novidades</h2>
 				<ol>
@@ -91,6 +92,7 @@
 						</a>
 					</li>
 				</ol>
+				<button type="button">Mostrar Mais</button>
 			</section>
 			<section class="painel mais-vendidos">
 				<h2>Mais vendidos</h2>
@@ -144,9 +146,12 @@
 						</a>
 					</li>
 				</ol>
+				<button type="button">Mostrar Mais</button>
 			</section>
 		</div>
 		<?php include("rodape.php");?>
+		<script src="js/jquery.js"></script>
+		<script src="js/home.js"></script>
 		<script src="js/trocaBanner.js"></script>
 	</body>
 </html>
