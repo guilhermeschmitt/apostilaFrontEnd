@@ -1,0 +1,56 @@
+@import "helper/placeholder";
+header{
+    h1{
+        text-align: center;
+        
+        img{
+            max-width: 50%;
+        }
+    }
+}
+
+.busca{
+    @extend %mob-busca-menu;
+}
+
+.container{
+    width: 96%;
+}
+
+.destaque {
+    img {
+        @extend %mob-busca-menu;
+    }
+}
+
+.menu-opcoes {
+    position: static;
+    text-align: center;
+
+    ul {
+        li {
+            display: inline-block;
+            margin: 5px;
+        }
+    }
+}
+
+.menu-departamentos {
+    @extend %mob-busca-menu;
+}
+
+.painel {
+    width: auto;
+
+    li{
+        width: 30%;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+.sacola{
+    display: none;
+}

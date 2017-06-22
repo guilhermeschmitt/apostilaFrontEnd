@@ -1,0 +1,77 @@
+@mixin radius-width($border-radius, $width) {
+    width: $width;
+    border-radius: $border-radius;
+}
+
+@mixin margin-width($margin ,$width){
+    margin: $margin;
+    width: $width;
+}
+
+@mixin background-bgcolor-float($background, $bgcolor, $float){
+    background: $background;
+    background-color: $bgcolor;
+    float: $float;
+}
+
+@mixin txtdecor-color($txtdecor, $color){
+    text-decoration: $txtdecor;
+    color: $color;
+}
+
+@mixin bgcolor-mgbot-padding($bgcolor, $mgbot, $padding){
+    background-color: $bgcolor;
+    margin-bottom: $mgbot;
+    padding: $padding;
+}
+
+@mixin posit-right($pos, $rig){
+    position: $pos;
+    right: $rig;
+}
+
+@mixin fontsize-txtalign($size, $align){
+    font-size: $size;
+    text-align: $align;
+}
+
+@mixin bxshd-bgcolor($bxshd, $bgcolor){
+    box-shadow: $bxshd;
+    background-color: $bgcolor;
+}
+
+@mixin fontsize-txtshd($size, $shd){
+    font-size: $size;
+    text-shadow: $shd;
+}
+
+@mixin display-trans($display, $trans){
+    display: $display;
+    transition: $trans;
+}
+
+@mixin bgcolor-left($bgcolor, $left){
+    background-color: $bgcolor;
+    left: $left;
+}
+
+@mixin fontsize-linehe($size, $hei){
+    font-size: $size;
+    line-height: $hei;
+}
+
+@mixin border-display($border, $display){
+    border: $border;
+    display: $display;
+}
+
+@mixin radius-hei-wid($radius, $hei, $wid){
+    border-radius: $radius;
+    height: $hei;
+    width: $wid;
+}
+
+@mixin linehi-color($line, $color){
+    line-height: $line;
+    color: $color;
+}

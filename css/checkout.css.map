@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACD,WAAW,EAAE,IAAI;;AAGrB,OAAQ;EACJ,MAAM,EAAE,CAAC;EAET,kBAAU;IACN,KAAK,EAAE,IAAI",
+"sources": ["../sass/checkout.scss"],
+"names": [],
+"file": "checkout.css"
+}

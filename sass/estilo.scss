@@ -1,0 +1,259 @@
+@import "helper/placeholder";
+@import "helper/mixins";
+@import "helper/variables";
+
+body {
+    color: $cinza-333;
+    font-family: 'Mogra', sans-serif;
+    background-image: url(../img/body-background.png)
+}
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+
+    .container {
+        position: relative;
+    }
+}
+
+header {
+    position: relative;
+}
+
+.busca {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    @extend %menu-busca-geral;
+
+    form {
+        @extend %menu-busca-h2-form;
+    }
+
+    h2 {
+        @extend %menu-busca-h2-form;
+    }
+
+    input {
+        vertical-align: middle;
+    }
+
+    input[type=search] {
+        @include radius-width(10px, 170px);
+    }
+}
+
+.container {
+    @include margin-width(0 auto, 940px);
+}
+
+.destaque {
+    margin-top: 10px;
+}
+
+.mais-vendidos {
+    @include background-bgcolor-float(linear-gradient($azul-bg, #f4bebe), $azul-bg, right);
+}
+
+.menu-departamentos {
+    clear: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    @extend %menu-busca-geral;
+
+    a {
+        @include txtdecor-color(none, $cinza-333);
+    }
+
+    h2 {
+        @extend %menu-busca-h2-form;
+    }
+
+    li {
+        @include bgcolor-mgbot-padding(white, 1px, 5px 10px);
+
+        li {
+            a {
+                &:before {
+                    content: '\272A ';
+                    padding-right: 3px;
+                }
+            }
+        }
+
+        ul {
+            display: none;
+        }
+
+        &:hover {
+            ul {
+                display: block;
+            }
+        }
+    }
+
+    ul {
+        ul {
+            li {
+                background-color: $cinza-dc;
+            }
+        }
+    }
+}
+
+.menu-opcoes {
+    bottom: 0;
+    @include posit-right(absolute, 0);
+
+    ul {
+        font-size: 14px;
+
+        li {
+            display: inline;
+            margin-left: 20px;
+        }
+    }
+
+    a {
+        color: #003366;
+
+        &:hover {
+            color: #007dc6;
+        }
+        &:active {
+            color: #867dc6;
+        }
+    }
+}
+
+.novidades {
+    @include background-bgcolor-float(linear-gradient($vermelho-bg, #bebef4), $vermelho-bg, left);
+}
+
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: inset 1px 1px 4px #999;
+    @include radius-width(4px, 445px);
+
+    a {
+        @include fontsize-txtalign(14px, center);
+        @include txtdecor-color(none, #333);
+    }
+
+    button {
+        float: right;
+        margin-top: 10px;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 1px 1px 3px rgba(30,30,30,0.5);
+        position: relative;
+        @include fontsize-txtshd(1em, 1px 0 1px black);
+        @include txtdecor-color(none, white);
+        @include bgcolor-mgbot-padding(#333, 10px, 10px);
+        @include display-trans(none, relative);
+
+        &:hover {
+            @include bxshd-bgcolor(1px 0 20px rgba(200,200,120,0.9), $cinza-39);
+
+            &:after {
+                border-top-color: $cinza-39;
+            }
+        }
+    }
+
+    h2 {
+        font-weight: bold;
+        font-family: 'Revalia', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        @include fontsize-txtshd(24px, 3px 3px 2px rgba(255, 255, 255, 0.8));
+
+        &:before {
+            content: '\2756';
+            padding-right: 5px;
+            opacity: 0.4;
+        }
+    }
+
+    li {
+        vertical-align: top;
+        padding-bottom: 10px;
+        @include display-trans(inline-block, 0.7s ease-in);
+        @include margin-width(2px, 140px);
+
+        &:hover {
+            @include bxshd-bgcolor(0 0 5px #333, rgba(255,255,255,0.8));
+            transform: scale(1.2);
+        }
+    }
+}
+
+.painel-compacto {
+    li:nth-child(n+7) {
+        display: none;
+    }
+
+    button {
+        display: block;
+    }
+}
+
+.pause {
+    border-left: 10px solid #900;
+    border-right: 10px solid #900;
+    height: 30px;
+    width: 5px;
+    @extend %pause-play;
+}
+
+.play {
+    border-left: 25px solid #900;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    @extend %pause-play;
+}
+
+.rodape {
+    height: 70px;
+}
+
+.sacola {
+    background: url(../img/sacola.png) no-repeat top right;
+    padding-right: 35px;
+    width: 140px;
+    padding-top: 8px;
+    top: 0;
+    @include fontsize-txtalign(14px, right);
+    @include posit-right(absolute, 0);
+}
+
+.social {
+    top: 12px;
+    @include posit-right(absolute, 0);
+
+    a {
+        height: 32px;
+        width: 32px;
+        display: block;
+        text-indent: -9999px;
+    }
+
+    a[href="facebook.com"] {
+        background-image: url(../img/facebook.png);
+    }
+
+    a[href="twitter.com"] {
+        background-image: url(../img/twitter.png);
+    }
+
+    a[href="g+.com"] {
+        background-image: url(../img/googleplus.png);
+    }
+
+    li {
+        float: left;
+        margin-left: 25px;
+    }
+}

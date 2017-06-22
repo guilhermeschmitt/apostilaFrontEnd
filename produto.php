@@ -2,7 +2,8 @@
 	$cabecalho_title = "Produto da Mirror Fashion"; 
 	$cabecalho_css = '<link rel="stylesheet" href="css/estilo.css">
 					  <link rel="stylesheet" href="css/reset.css" >
-					  <link rel="stylesheet" href="css/produto.css" >'; 
+					  <link rel="stylesheet" href="css/produto.css" >
+					  <link rel="stylesheet" href="css/produtos-media.css" >'; 
 	include("cabecalho.php");
 ?>
 	<div class="produto-back">

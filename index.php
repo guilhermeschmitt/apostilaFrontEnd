@@ -37,7 +37,8 @@
 					</ul>
 				<nav>
 			</section>
-			<img src="img/destaque-home.png" alt="Promoção: Big City Night">
+			<img src="img/destaque-home.jpg" alt="Promoção: Big City Night">
+			<a href="#" class="pause"></a>
 		</div>
 		<div class="container">
 			<section class="painel novidades">
@@ -153,5 +154,6 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/home.js"></script>
 		<script src="js/trocaBanner.js"></script>
+		<script src="js/pausePlay.js"></script>
 	</body>
 </html>
