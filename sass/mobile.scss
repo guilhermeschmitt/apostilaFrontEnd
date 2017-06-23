@@ -51,6 +51,14 @@ header{
     }
 }
 
+.pause {
+    @extend %pause-play-mobile;
+}
+
+.play{
+    @extend %pause-play-mobile;
+}
+
 .sacola{
     display: none;
 }

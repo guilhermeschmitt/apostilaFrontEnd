@@ -44,7 +44,8 @@ header {
   width: 940px; }
 
 .destaque {
-  margin-top: 10px; }
+  margin-top: 10px;
+  position: relative; }
 
 .mais-vendidos {
   background: linear-gradient(#dcdcf5, #f4bebe);

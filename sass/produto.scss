@@ -141,3 +141,8 @@ thead {
     @include radius-hei-wid(50%, 44px, 44px);
     @include linehi-color(44px, #555);
 }
+
+.twitter-share-button {
+    padding-top: 0px;
+    padding-bottom: 26px;
+}
