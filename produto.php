@@ -13,8 +13,10 @@
 			<div class="produto">
 				<h1>Fuzzy Cardigan</h1>
 				<p>Por apenas R$129,00</p>
-				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=172&layout=button_count&action=like&size=small&show_faces=false&share=true&height=46&appId" width="172" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-				<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Teste%20Um%20Dois%20Tres">Tweet</a>
+				<div class="share">
+					<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=172&layout=button_count&action=like&size=small&show_faces=false&share=true&height=46&appId" width="172" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Teste%20Um%20Dois%20Tres">Tweet</a>
+				</div>
 				<form action="checkout.php" method="POST">
 					<input type="hidden" name="nome" value="Fuzzy Cardigan">
 					<input type="hidden" name="preco" value="129.00">
